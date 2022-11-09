@@ -20,11 +20,11 @@ public class BrokerA extends Broker implements Commission {
     public double calcCommission(double sales) {
         double commission;
         if (sales <= 100000) {
-            commission = sales * 10 / 100;
-        } else if (sales > 100000 && sales <= 300000) {
             commission = sales * 15 / 100;
-        } else {
+        } else if (sales > 100000 && sales <= 300000) {
             commission = sales * 20 / 100;
+        } else {
+            commission = sales * 30 / 100;
         }
         return commission;
     }

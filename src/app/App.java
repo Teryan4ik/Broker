@@ -24,7 +24,7 @@ public class App {
 
     private static void doInputs() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter broker name:");
+        System.out.println("Enter broker name :");
         brokerName = sc.nextLine().trim();
         System.out.println("Enter e-mail " + brokerName + ":");
         email = sc.nextLine().trim();
